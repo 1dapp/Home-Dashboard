@@ -1768,6 +1768,14 @@ function Transaction_Pool() {
     <script src="https://bullrun.live/Content/assets/js/custom.js"></script>
     <!--LOgout Js-->
     
-    <script src="https://bullrun.live/Content/Scripts/LogOut.js"></script>
+    <script> 
+     $(document).ready(function() {
+        $('.logoutuser').click(function () {
+        
+            var account = localStorage.removeItem("address", null);
+            location.href = "https://1dapp.github.io/signin";
+        });
+    });
+    </script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+<div class="app-content">
+    <div class="section">
+        
+
+
+
+        <!-- row opened -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card overflow-hidden">
+                    <div class="card-header">
+                        <h3 class="card-title">Team</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="">
+                            <div class="panel panel-primary">
+
+                                <div class="panel-body tabs-menu-body">
+                                    <div class="panel-group1" id="accordion11">
+                                        <div class="">No data found</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- row closed -->
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+
+        $(".resp-tabs-list li").removeClass('resp-tab-active active');
+        $(".resp-tabs-list li.team2").addClass('resp-tab-active active')
+
+    })
+</script>
+
+
+

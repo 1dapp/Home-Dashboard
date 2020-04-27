@@ -774,17 +774,17 @@ function getVariableData() {
         
             $('.currentuseridlink').html("https://1dapp.github.io/signup?referralid=" + result1.id);
 
-            $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://1dapp.github.io/signup?referralid=" + result1.id);
+            $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://1dapp.github.io/signup?" + result1.id);
 
 
 
-            $('.currentuseridlink').val("https://1dapp.github.io/signup?referralid=" + result1.id);
+            $('.currentuseridlink').val("https://1dapp.github.io/signup?" + result1.id);
 
-            $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://1dapp.github.io/signup?referralid=" + result1.id);
+            $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://1dapp.github.io/signup?" + result1.id);
 
 
 
-            $('.sharebutton').attr('data-url', "https://1dapp.github.io/signup?referralid=" + result1.id);
+            $('.sharebutton').attr('data-url', "https://1dapp.github.io/signup?" + result1.id);
             $('.currentuserid').html(result1.id);
             $('.currentaddress').html(account);
             $('.ethaddress').attr('href', 'https://etherscan.io/address/' + account);
@@ -1506,7 +1506,7 @@ function Transaction_Pool() {
                     <div class="card-body">
                         <h1 class="pricing-card-title mb-5">0.2 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>0.2</strong> ETH each</p>
-                        <p class="mb-5">1 Referral necessary</p>
+                        <p class="mb-5">No Referral necessary</p>
                         <button type="button" class="btn btn-danger pool2pay">Enter</button>
                         <p class="pool2transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1524,7 +1524,7 @@ function Transaction_Pool() {
                     <div class="card-body">
                         <h1 class="pricing-card-title mb-5">0.5 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>0.5</strong> ETH each</p>
-                        <p class="mb-5">2 Referral necessary</p>
+                        <p class="mb-5">No Referral necessary</p>
                         <button type="button" class="btn btn-success pool3pay">Enter</button>
                         <p class="pool3transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1543,7 +1543,7 @@ function Transaction_Pool() {
                     <div class="card-body">
                         <h1 class="pricing-card-title mb-5">1 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>1</strong> ETH each</p>
-                        <p class="mb-5">3 Referral necessary</p>
+                        <p class="mb-5">No Referral necessary</p>
                         <button type="button" class="btn btn-success pool4pay">Enter</button>
                         <p class="pool4transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1562,7 +1562,7 @@ function Transaction_Pool() {
                     <div class="card-body">
                         <h1 class="pricing-card-title mb-5">2 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>2</strong> ETH each</p>
-                        <p class="mb-5">4 Referral necessary</p>
+                        <p class="mb-5">No Referral necessary</p>
                         <button type="button" class="btn btn-success pool5pay">Enter</button>
                         <p class="pool5transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1581,7 +1581,7 @@ function Transaction_Pool() {
                     <div class="card-body">
                         <h1 class="pricing-card-title mb-5">5 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>5</strong> ETH each</p>
-                        <p class="mb-5">5 Referral necessary</p>
+                        <p class="mb-5">No Referral necessary</p>
                         <button type="button" class="btn btn-success pool6pay">Enter</button>
                         <p class="pool6transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1600,7 +1600,7 @@ function Transaction_Pool() {
                     <div class="card-body">
                         <h1 class="pricing-card-title mb-5">10 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>10</strong> ETH each</p>
-                        <p class="mb-5">6 Referral necessary</p>
+                        <p class="mb-5">No Referral necessary</p>
                         <button type="button" class="btn btn-success pool7pay">Enter</button>
                         <p class="pool7transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1619,7 +1619,7 @@ function Transaction_Pool() {
                     <div class="card-body">
                         <h1 class="pricing-card-title mb-5">20 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>20</strong> ETH each</p>
-                        <p class="mb-5">7 Referral necessary</p>
+                        <p class="mb-5">No Referral necessary</p>
                         <button type="button" class="btn btn-success pool8pay">Enter</button>
                         <p class="pool8transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1638,7 +1638,7 @@ function Transaction_Pool() {
                     <div class="card-body">
                         <h1 class="pricing-card-title mb-5">50 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>50</strong> ETH each</p>
-                        <p class="mb-5">8 Referral necessary</p>
+                        <p class="mb-5">No Referral necessary</p>
                         <button type="button" class="btn btn-success pool9pay">Enter</button>
                         <p class="pool9transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1657,7 +1657,7 @@ function Transaction_Pool() {
                     <div class="card-body">
                         <h1 class="pricing-card-title mb-5">100 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>100</strong> ETH each</p>
-                        <p class="mb-5">9 Referral necessary</p>
+                        <p class="mb-5">No Referral necessary</p>
                         <button type="button" class="btn btn-success pool10pay">Enter</button>
                         <p class="pool10transaction btn btn-primary disabled">Not Eligible</p>
                     </div>

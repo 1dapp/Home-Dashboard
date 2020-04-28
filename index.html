@@ -772,19 +772,19 @@ function getVariableData() {
 
     myContractInstance.methods.users(account).call().then(function (result1) {
         
-            $('.currentuseridlink').html("https://1dapp.github.io/signup?referralid=_value" + result1.id);
+            $('.currentuseridlink').html("https://1dapp.github.io/signup?referralid=" + result1.id);
 
-            $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://1dapp.github.io/signup?referralid=_value" + result1.id);
-
-
-
-            $('.currentuseridlink').val("https://1dapp.github.io/signup?referralid=_value" + result1.id);
-
-            $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://1dapp.github.io/signup?referralid=_value" + result1.id);
+            $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://1dapp.github.io/signup?referralid=" + result1.id);
 
 
 
-            $('.sharebutton').attr('data-url', "https://1dapp.github.io/signup?referralid=_value" + result1.id);
+            $('.currentuseridlink').val("https://1dapp.github.io/signup?referralid=" + result1.id);
+
+            $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://1dapp.github.io/signup?referralid=" + result1.id);
+
+
+
+            $('.sharebutton').attr('data-url', "https://1dapp.github.io/signup?referralid=" + result1.id);
             $('.currentuserid').html(result1.id);
             $('.currentaddress').html(account);
             $('.ethaddress').attr('href', 'https://etherscan.io/address/' + account);
@@ -1149,10 +1149,10 @@ function Transaction_Pool() {
                     <div class="col-xl-3 col-lg-3 col-md-3 text-right d-flex d-block">
                         <div class="socialjs">
 
-                            <a class="sharebutton facebook btn " style="background-color:#3b5998;color:white" data-basecount="" data-sharetype="facebook" data-text="The page title" title="Share this on Facebook" href="#" data-url="https://bullrun.live/user/signup?referralid=_value"><i class=" fa fa-facebook"></i></a>
+                            <a class="sharebutton facebook btn " style="background-color:#3b5998;color:white" data-basecount="" data-sharetype="facebook" data-text="The page title" title="Share this on Facebook" href="#" data-url="https://bullrun.live/user/signup?referralid="><i class=" fa fa-facebook"></i></a>
 
-                            <a class="sharebutton twitter btn" style="background-color:#00acee;color:white" data-basecount="" data-sharetype="twitter" data-text="The page title" data-via="AndreasNorman" data-related="AndreasNorman" title="Share this on Twitter" href="#"><i class=" fa fa-twitter"></i> </a>
-                            <a class="sharebutton linkedin btn" style="background-color:#0e76a8;color:white" data-basecount="" data-sharetype="linkedin" data-text="The page title" data-referer="AndreasNorman" data-related="AndreasNorman" title="Share this on LinkedIn" href="#"><i class=" fa fa-linkedin"></i> </a>
+                            <a class="sharebutton twitter btn" style="background-color:#00acee;color:white" data-basecount="" data-sharetype="twitter" data-text="The page title" data-via="INHERIT38092481" data-related="" title="Share this on Twitter" href="#"><i class=" fa fa-twitter"></i> </a>
+                            <a class="sharebutton linkedin btn" style="background-color:#0e76a8;color:white" data-basecount="" data-sharetype="linkedin" data-text="The page title" data-referer="INHERIT38092481" data-related="INHERIT38092481" title="Share this on LinkedIn" href="#"><i class=" fa fa-linkedin"></i> </a>
 
                             <a class="sharebutton telegram btn" style="background-color:#0088cc;color:white" data-basecount="" data-sharetype="telegram" data-text="The page title" title="Share on telegram" href="#"><i class="fa fa-telegram"></i> </a>
                         </div>  </div>
@@ -1467,7 +1467,7 @@ function Transaction_Pool() {
             <div class="col-lg-12 col-sm-12 col-xl-4 col-md-12 ">
                 <div class="card">
                     <div class="card-body p-0" style="height:700px;overflow:auto">
-                        <a class="twitter-timeline" href="https://twitter.com?ref_src=twsrc%5Etfw">Tweets by BULLRUN V3</a>
+                        <a class="twitter-timeline" href="https://twitter.com?ref_src=twsrc%5Etfw">Tweets by Twitter</a>
                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>

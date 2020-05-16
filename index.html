@@ -878,7 +878,7 @@ $(document).ready(function () {
         try {
 
             ethereum.enable();
-            myContractInstance1.methods.buyPool1().send({ from: account, value: 100000000000000000, gas: 100000 })
+            myContractInstance1.methods.buyPool1().send({ from: account, value: 100000000000000000, gas: 500000 })
                 .on('transactionHash', function (hash) {
                 
                     $('.pool1pay').hide();

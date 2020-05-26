@@ -10,7 +10,7 @@
 
         if (account == null) {
             alert("You are not Logged In. Please Login first..!!");
-            location.href = "https://1dapp.github.io/signin";
+           //location.href = "https://1dapp.github.io/signin";
         }
     </script>
 
@@ -19,55 +19,54 @@
 
     <!-- Title -->
     <title>BullRun V3</title>
+  <!-- Bootstrap css -->
+  <link href="https://bullrun.live/Content/assets/plugins/bootstrap-4.1.3/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Bootstrap css -->
-    <link href="https://bullrun.live/Content/assets/plugins/bootstrap-4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Style css -->
+  <link href="https://bullrun.live/Content/assets/css/style.css" rel="stylesheet" />
 
-    <!-- Style css -->
-    <link href="https://bullrun.live/Content/assets/css/style.css" rel="stylesheet" />
+  <!-- Default css -->
+  <link href="https://bullrun.live/Content/assets/css/default.css" rel="stylesheet">
 
-    <!-- Default css -->
-    <link href="https://bullrun.live/Content/assets/css/default.css" rel="stylesheet">
+  <!-- Sidemenu css-->
+  <link rel="stylesheet" href="https://bullrun.live/Content/assets/plugins/sidemenu/sidemenu.css">
 
-    <!-- Sidemenu css-->
-    <link rel="stylesheet" href="https://bullrun.live/Content/assets/plugins/sidemenu/sidemenu.css">
+  <!-- Bootstrap-daterangepicker css -->
+  <link rel="stylesheet" href="https://bullrun.live/Content/assets/plugins/bootstrap-daterangepicker/daterangepicker.css">
 
-    <!-- Bootstrap-daterangepicker css -->
-    <link rel="stylesheet" href="https://bullrun.live/Content/assets/plugins/bootstrap-daterangepicker/daterangepicker.css">
+  <!-- Bootstrap-datepicker css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker3.min.css">
 
-    <!-- Bootstrap-datepicker css -->
-    <link rel="stylesheet" href="https://bullrun.live/Content/assets/plugins/bootstrap-datepicker/bootstrap-datepicker.css">
+  <!-- Custom scroll bar css -->
+  <link href="https://bullrun.live/Content/assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
 
-    <!-- Custom scroll bar css -->
-    <link href="https://bullrun.live/Content/assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+  <!-- Sidemenu-repsonsive-tabs  css -->
+  <link href="https://bullrun.live/Content/assets/plugins/sidemenu-responsive-tabs/css/sidemenu-responsive-tabs.css" rel="stylesheet">
 
-    <!-- Sidemenu-repsonsive-tabs  css -->
-    <link href="https://bullrun.live/Content/assets/plugins/sidemenu-responsive-tabs/css/sidemenu-responsive-tabs.css" rel="stylesheet">
+  <!-- P-scroll css -->
+  <link href="https://bullrun.live/Content/assets/plugins/p-scroll/p-scroll.css" rel="stylesheet" type="text/css">
 
-    <!-- P-scroll css -->
-    <link href="https://bullrun.live/Content/assets/plugins/p-scroll/p-scroll.css" rel="stylesheet" type="text/css">
+  <!-- Nice-select css  -->
+  <link href="https://bullrun.live/Content/assets/plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet" />
 
-    <!-- Nice-select css  -->
-    <link href="https://bullrun.live/Content/assets/plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet" />
+  <!-- Select2 Plugin -->
+  <link href="https://bullrun.live/Content/assets/plugins/select2/select2.min.css" rel="stylesheet" />
 
-    <!-- Select2 Plugin -->
-    <link href="https://bullrun.live/Content/assets/plugins/select2/select2.min.css" rel="stylesheet" />
+  <!-- News-Ticker css-->
+  <link href="https://bullrun.live/Content/assets/plugins/newsticker/jquery.jConveyorTicker.css" rel="stylesheet" />
 
-    <!-- News-Ticker css-->
-    <link href="https://bullrun.live/Content/assets/plugins/newsticker/jquery.jConveyorTicker.css" rel="stylesheet" />
+  <!-- Font icons css-->
+  <link href="https://bullrun.live/Content/assets/css/icons.css" rel="stylesheet">
 
-    <!-- Font icons css-->
-    <link href="https://bullrun.live/Content/assets/css/icons.css" rel="stylesheet">
+  <!-- Rightsidebar css -->
+  <link href="https://bullrun.live/Content/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
 
-    <!-- Rightsidebar css -->
-    <link href="https://bullrun.live/Content/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+  <!-- Color-palette css-->
+  <link rel="stylesheet" href="https://bullrun.live/Content/assets/css/skins.css" />
 
-    <!-- Color-palette css-->
-    <link rel="stylesheet" href="https://bullrun.live/Content/assets/css/skins.css" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 
     
     <style>
@@ -81,7 +80,7 @@
 
     <!-- Loader -->
     <div id="loading">
-        <img src="https://bullrun.live/Content/assets/images/other/loader.svg" class="loader-img" alt="Loader">
+        <img src="Content/assets/images/other/loader.svg" class="loader-img" alt="Loader">
     </div>
 
     <!-- PAGE -->
@@ -98,7 +97,7 @@
                                 
                                
                             </a>
-                            <a href="#" data-toggle="sidebar" class="nav-link icon toggle"><i class="fe fe-align-justify fs-20"></i></a>
+                            <a href="#" data-toggle="sidebar" class="nav-link icon toggle"><i class="fa fa-align-justify fs-20"></i></a>
                         </div>
                     </div>
                 </div>
@@ -112,13 +111,13 @@
                         <div class="line-animations">
                             <ul class="resp-tabs-list hor_1">
                                 
-                                 <li class="resp-tab-active active"><a href="/Home-Dashboard"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/homepage.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Home"></a></li>
-                                <li class="autopool"><a href="https://1dapp.github.io/Autopool"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m2.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Autopool"></a></li>
-                                <li class="trans"><a href="https://1dapp.github.io/Transaction"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m3.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Transations"></a></li>
-                                <li class="team2"><a href="https://1dapp.github.io/Team"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m4.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Team"></a></li>
-                                <li class="media2"><a href="https://1dapp.github.io/Media"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m5.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Media"></a></li>
+                                 <li class="resp-tab-active active"><a href="/Home-Dashboard"><span class="side-menu__icon"></span><img src="Content/assets/img/homepage.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Home"></a></li>
+                                <li class="autopool"><a href="https://1dapp.github.io/Autopool"><span class="side-menu__icon"></span><img src="Content/assets/img/m2.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Autopool"></a></li>
+                                <li class="trans"><a href="https://1dapp.github.io/Transaction"><span class="side-menu__icon"></span><img src="Content/assets/img/m3.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Transations"></a></li>
+                                <li class="team2"><a href="https://1dapp.github.io/Team"><span class="side-menu__icon"></span><img src="Content/assets/img/m4.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Team"></a></li>
+                                <li class="media2"><a href="https://1dapp.github.io/Media"><span class="side-menu__icon"></span><img src="Content/assets/img/m5.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Media"></a></li>
                              
-                                <li class="logoutuser"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m6.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Log out"></li>
+                                <li class="logoutuser"><span class="side-menu__icon"></span><img src="Content/assets/img/m6.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Log out"></li>
                           
                             </ul>
                         </div>
@@ -135,13 +134,14 @@ var totalearned = 0;
 function getVariableData() {
     // get variable values
     myContractInstance.methods.pool1currUserID().call().then(function (result) {
+        console.log('pool1users',result)
         $('.Pool1count').html(result);
         $('.pool1_current_address').html("<a href=https://etherscan.io/address/" + result + " target=_blank>" + result + "</a>");
     });
 
     myContractInstance.methods.pool2currUserID().call().then(function (result) {
         
-            $('.Pool2count').html(result);
+        $('.Pool2count').html(result);
         $('.pool2_current_address').html("<a href=https://etherscan.io/address/" + result + " target=_blank>" + result + "</a>");
     });
 
@@ -153,7 +153,7 @@ function getVariableData() {
 
     myContractInstance.methods.pool4currUserID().call().then(function (result) {
        
-            $('.Pool4count').html(result);
+         $('.Pool4count').html(result);
         $('.pool4_current_address').html("<a href=https://etherscan.io/address/" + result + " target=_blank>" + result+ "</a>");
     });
 
@@ -508,6 +508,7 @@ function Transaction_Pool() {
        
 
 <script>
+
 var myContractInstance, myContractInstance1;
 var account = localStorage.getItem("address");
 
@@ -564,6 +565,7 @@ window.addEventListener('load', function () {
 function checkbuyLevel() {
 
     myContractInstance.methods.users(account).call().then(function (result) {
+     
        
             if (result[0]) {
                 checkPool1();
@@ -585,7 +587,13 @@ function checkbuyLevel() {
 
 function checkPool1() {
 
+
+
     myContractInstance.methods.pool1users(account).call().then(function (result) {
+        if(result[1] > 0){
+        $('#pool1sequencue').text(result[1])
+        $('#pool1sequencue').show();
+        $('.pool1sequencue').show();}
        
             if (!result[0]) {
                 $('.pool1pay').show();
@@ -615,8 +623,15 @@ function checkPool1() {
 }
 
 function checkPool2() {
+
     myContractInstance.methods.pool2users(account).call().then(function (result) {
-      
+   
+        if(result[1] > 0){
+            $('#pool2sequencue').text(result[1])
+            $('#pool2sequencue').show();
+            $('.pool2sequencue').show();
+        }
+       
             if (!result[0]) {
                 $('.pool2pay').show();
                 $('.pool2transaction').hide();
@@ -634,6 +649,9 @@ function checkPool2() {
                 $('.pool2status .card-status').addClass('bg-warning');
                 $('.pool2status .ribbon').addClass('text-warning').html('<span class="bg-warning">Active</span>');
                 $('.pool2transaction').html('Received No. of Payments ' + result[2]); $('.currentautopoolno').html(2);
+                console.log("ok")
+                $('#numbersec').show()
+                
             }
 
 
@@ -644,9 +662,14 @@ function checkPool2() {
 }
 
 function checkPool3() {
-    myContractInstance.methods.pool3users(account).call().then(function (result) {
-       
 
+
+    myContractInstance.methods.pool3users(account).call().then(function (result) {
+        console.log("pool3users",result)
+        if(result[1] > 0){
+        $('#pool3sequencue').text(result[1])
+        $('#pool3sequencue').show();
+        $('.pool3sequencue').show();}
             if (!result[0]) {
                 $('.pool3pay').show();
                 $('.pool3transaction').hide();
@@ -676,6 +699,10 @@ function checkPool3() {
 
 function checkPool4() {
     myContractInstance.methods.pool4users(account).call().then(function (result) {
+        if(result[1] > 0){
+        $('#pool4sequencue').text(result[1])
+        $('#pool4sequencue').show();
+        $('.pool4sequencue').show();}
        
             if (!result[0]) {
                 $('.pool4pay').show();
@@ -704,6 +731,10 @@ function checkPool4() {
 
 function checkPool5() {
     myContractInstance.methods.pool5users(account).call().then(function (result) {
+        if(result[1] > 0){
+        $('#pool5sequencue').text(result[1])
+        $('#pool5sequencue').show();
+        $('.pool5sequencue').show();}
        
             if (!result[0]) {
                 $('.pool5pay').show();
@@ -733,6 +764,10 @@ function checkPool5() {
 
 function checkPool6() {
     myContractInstance.methods.pool6users(account).call().then(function (result) {
+        if(result[1] > 0){
+        $('#pool6sequencue').text(result[1])
+        $('#pool6sequencue').show();
+        $('.pool6sequencue').show();}
         
             if (!result[0]) {
                 $('.pool6pay').show();
@@ -760,6 +795,10 @@ function checkPool6() {
 
 function checkPool7() {
     myContractInstance.methods.pool7users(account).call().then(function ( result) {
+        if(result[1] > 0){
+        $('#pool7sequencue').text(result[1])
+        $('#pool7sequencue').show();
+        $('.pool7sequencue').show();}
         
             if (!result[0]) {
                 $('.pool7pay').show();
@@ -790,6 +829,10 @@ function checkPool7() {
 
 function checkPool8() {
     myContractInstance.methods.pool8users(account).call().then(function ( result) {
+        if(result[1] > 0){
+        $('#pool8sequencue').text(result[1])
+        $('#pool8sequencue').show();
+        $('.pool8sequencue').show();}
        
             if (!result[0]) {
                 $('.pool8pay').show();
@@ -819,6 +862,10 @@ function checkPool8() {
 
 function checkPool9() {
     myContractInstance.methods.pool9users(account).call().then(function ( result) {
+        if(result[1] > 0){
+        $('#pool9sequencue').text(result[1])
+        $('#pool9sequencue').show();
+        $('.pool9sequencue').show();}
        
             if (!result[0]) {
                 $('.pool9pay').show();
@@ -848,6 +895,10 @@ function checkPool9() {
 
 function checkPool10() {
     myContractInstance.methods.pool10users(account).call().then(function (result) {
+        if(result[1] > 0){
+        $('#pool10sequencue').text(result[1])
+        $('#pool10sequencue').show();
+        $('.pool10sequencue').show();}
        
             if (!result[0]) {
                 $('.pool10pay').show();
@@ -874,13 +925,14 @@ function checkPool10() {
 
 }
 $(document).ready(function () {
-    $('.pool1pay').click(function () {
+    $('.pool1pay').click(function (demo) {
+       
         try {
 
             ethereum.enable();
             myContractInstance1.methods.buyPool1().send({ from: account, value: 100000000000000000, gas: 500000 })
                 .on('transactionHash', function (hash) {
-                
+                    console.log('------->',hash)
                     $('.pool1pay').hide();
                     $('.pool1transaction').show();
                     $('.pool1transaction').html('<a href="https://etherscan.io/tx/' + hash + '">Track</a>');
@@ -1075,7 +1127,7 @@ $(document).ready(function () {
 <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
         
         
-  <script src="https://bullrun.live/content/assets/js/socialjs.js"></script>
+  <script src="assets/js/socialjs.js"></script>
        
         
         
@@ -1134,7 +1186,7 @@ $(document).ready(function () {
             <div class="col-xl-12">
                 <div class="banner banner-color mt-0">
                     <div class="col-xl-2 col-lg-3 col-md-12">
-                        <img src="https://bullrun.live//Content/assets/images/svg/new_message.svg" alt="image" class="image">
+                        <img src="Content/assets/images/svg/new_message.svg" alt="image" class="image">
                     </div>
                     <div class="page-content col-xl-7 col-lg-6 col-md-12">
                         <h3 class="mb-1">User ID : <span class="currentuserid"></span></h3>
@@ -1175,7 +1227,7 @@ $(document).ready(function () {
                                     <div class="row">
                                         <div class="d-flex">
                                             <div class="">
-                                                <img src="https://bullrun.live/Content/assets/img/user.png" class="w-7 h-7" alt="">
+                                                <img src="Content/assets/img/user.png" class="w-7 h-7" alt="">
                                             </div>
                                             <div class="ml-3">
                                                 <p class="text-white mb-1 fs-12">Total Users</p>
@@ -1190,7 +1242,7 @@ $(document).ready(function () {
                                     <div class="row">
                                         <div class="d-flex">
                                             <div class="">
-                                                <img src="https://bullrun.live/Content/assets/img/1.png" class="w-7 h-7" alt="">
+                                                <img src="Content/assets/img/1.png" class="w-7 h-7" alt="">
                                             </div>
                                             <div class="ml-3">
                                                 <p class="text-white mb-1 fs-12">Pool 1 Users</p>
@@ -1205,7 +1257,7 @@ $(document).ready(function () {
                                     <div class="row">
                                         <div class="d-flex">
                                             <div class="">
-                                                <img src="https://bullrun.live/Content/assets/img/2.png" class="w-7 h-7" alt="">
+                                                <img src="Content/assets/img/2.png" class="w-7 h-7" alt="">
                                             </div>
                                             <div class="ml-3">
                                                 <p class="text-white mb-1 fs-12">Pool 2 Users</p>
@@ -1220,7 +1272,7 @@ $(document).ready(function () {
                                     <div class="row">
                                         <div class="d-flex">
                                             <div class="">
-                                                <img src="https://bullrun.live/Content/assets/img/3.png" class="w-7 h-7" alt="">
+                                                <img src="Content/assets/img/3.png" class="w-7 h-7" alt="">
                                             </div>
                                             <div class="ml-3">
                                                 <p class="text-white mb-1 fs-12">Pool 3 Users</p>
@@ -1236,7 +1288,7 @@ $(document).ready(function () {
                                     <div class="row">
                                         <div class=" d-flex">
                                             <div class="">
-                                                <img src="https://bullrun.live/Content/assets/img/4.png" class="w-7 h-7" alt="">
+                                                <img src="Content/assets/img/4.png" class="w-7 h-7" alt="">
                                             </div>
                                             <div class="ml-3">
                                                 <p class="text-white mb-1 fs-12">Pool 4 Users</p>
@@ -1252,7 +1304,7 @@ $(document).ready(function () {
                                     <div class="row">
                                         <div class=" d-flex">
                                             <div class="">
-                                                <img src="https://bullrun.live/Content/assets/img/5.png" class="w-7 h-7" alt="">
+                                                <img src="Content/assets/img/5.png" class="w-7 h-7" alt="">
                                             </div>
                                             <div class="ml-3">
                                                 <p class="text-white mb-1 fs-12">Pool 5 Users</p>
@@ -1268,7 +1320,7 @@ $(document).ready(function () {
                                     <div class="row">
                                         <div class=" d-flex">
                                             <div class="">
-                                                <img src="https://bullrun.live/Content/assets/img/6.png" class="w-7 h-7" alt="">
+                                                <img src="Content/assets/img/6.png" class="w-7 h-7" alt="">
                                             </div>
                                             <div class="ml-3">
                                                 <p class="text-white mb-1 fs-12">Pool 6 Users</p>
@@ -1284,7 +1336,7 @@ $(document).ready(function () {
                                     <div class="row">
                                         <div class=" d-flex">
                                             <div class="">
-                                                <img src="https://bullrun.live/Content/assets/img/7.png" class="w-7 h-7" alt="">
+                                                <img src="Content/assets/img/7.png" class="w-7 h-7" alt="">
                                             </div>
                                             <div class="ml-3">
                                                 <p class="text-white mb-1 fs-12">Pool 7 Users</p>
@@ -1300,7 +1352,7 @@ $(document).ready(function () {
                                     <div class="row">
                                         <div class=" d-flex">
                                             <div class="">
-                                                <img src="https://bullrun.live/Content/assets/img/8.png" class="w-7 h-7" alt="">
+                                                <img src="Content/assets/img/8.png" class="w-7 h-7" alt="">
                                             </div>
                                             <div class="ml-3">
                                                 <p class="text-white mb-1 fs-12">Pool 8 Users</p>
@@ -1315,7 +1367,7 @@ $(document).ready(function () {
                                     <div class="row">
                                         <div class=" d-flex">
                                             <div class="">
-                                                <img src="https://bullrun.live/Content/assets/img/9.png" class="w-7 h-7" alt="">
+                                                <img src="Content/assets/img/9.png" class="w-7 h-7" alt="">
                                             </div>
                                             <div class="ml-3">
                                                 <p class="text-white mb-1 fs-12">Pool 9 Users</p>
@@ -1330,7 +1382,7 @@ $(document).ready(function () {
                                     <div class="row">
                                         <div class=" d-flex">
                                             <div class="">
-                                                <img src="https://bullrun.live/Content/assets/img/10.png" class="w-7 h-7" alt="">
+                                                <img src="Content/assets/img/10.png" class="w-7 h-7" alt="">
                                             </div>
                                             <div class="ml-3">
                                                 <p class="text-white mb-1 fs-12">Pool 10 Users</p>
@@ -1359,7 +1411,7 @@ $(document).ready(function () {
                             </div>
                             <div class=" my-auto ml-auto">
                                 <div class="chart-wrapper text-center">
-                                    <img src="https://bullrun.live/Content/assets/img/d1.png" class="h-7" alt="">
+                                    <img src="Content/assets/img/d1.png" class="h-7" alt="">
                                 </div>
                             </div>
                         </div>
@@ -1379,7 +1431,7 @@ $(document).ready(function () {
                             </div>
                             <div class=" my-auto ml-auto">
                                 <div class="chart-wrapper text-center">
-                                    <img src="https://bullrun.live/Content/assets/img/d2.png" class="h-7" alt="">
+                                    <img src="Content/assets/img/d2.png" class="h-7" alt="">
                                 </div>
                             </div>
                         </div>
@@ -1402,7 +1454,7 @@ $(document).ready(function () {
                             </div>
                             <div class=" my-auto ml-auto">
                                 <div class="chart-wrapper text-center">
-                                    <img src="https://bullrun.live/Content/assets/img/d4.png" class="h-7" alt="">
+                                    <img src="Content/assets/img/d4.png" class="h-7" alt="">
                                 </div>
                             </div>
                         </div>
@@ -1422,7 +1474,7 @@ $(document).ready(function () {
 
                             <div class=" my-auto ml-auto">
                                 <div class="chart-wrapper text-center">
-                                    <img src="https://bullrun.live/Content/assets/img/d5.png" class="h-7" alt="">
+                                    <img src="Content/assets/img/d5.png" class="h-7" alt="">
                                 </div>
                             </div>
 
@@ -1493,6 +1545,8 @@ $(document).ready(function () {
                         <h1 class="pricing-card-title mb-5">0.1 ETH</h1>
                         <p class="mb-5">Globally <strong>2</strong> people pays <br /> <strong>0.1</strong> ETH each</p>
                         <p class="mb-5">No Referral necessary</p>
+                        <p class="mb-5 pool1sequencue" style="display: none;">Your position number : <strong id="pool1sequencue"></strong> </p>
+                        <p class="mb-5 pool1paying" style="display: none;">Current Paying Sequence number: <strong id="pool1paying"></strong></p>
                         <button type="button" class="btn btn-primary pool1pay">Enter</button>
                         <p class="pool1transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1511,6 +1565,8 @@ $(document).ready(function () {
                         <h1 class="pricing-card-title mb-5">0.2 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>0.2</strong> ETH each</p>
                         <p class="mb-5">No Referral necessary</p>
+                        <p class="mb-5 pool2sequencue" style="display: none;">Your position number : <strong id="pool2sequencue"></strong> </p>
+                        <p class="mb-5 pool2paying" style="display: none;">Current Paying Sequence number: <strong id="pool2paying"></strong></p>
                         <button type="button" class="btn btn-danger pool2pay">Enter</button>
                         <p class="pool2transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1529,6 +1585,8 @@ $(document).ready(function () {
                         <h1 class="pricing-card-title mb-5">0.5 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>0.5</strong> ETH each</p>
                         <p class="mb-5">No Referral necessary</p>
+                        <p class="mb-5 pool3sequencue" style="display: none;">Your position number : <strong id="pool3sequencue"></strong> </p>
+                        <p class="mb-5 pool3paying" style="display: none;">Current Paying Sequence number: <strong id="pool3paying"></strong></p>
                         <button type="button" class="btn btn-success pool3pay">Enter</button>
                         <p class="pool3transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1548,6 +1606,8 @@ $(document).ready(function () {
                         <h1 class="pricing-card-title mb-5">1 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>1</strong> ETH each</p>
                         <p class="mb-5">No Referral necessary</p>
+                        <p class="mb-5 pool4sequencue" style="display: none;">Your position number : <strong id="pool4sequencue"></strong> </p>
+                        <p class="mb-5 pool4paying" style="display: none;">Current Paying Sequence number: <strong id="pool4paying"></strong></p>
                         <button type="button" class="btn btn-success pool4pay">Enter</button>
                         <p class="pool4transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1567,6 +1627,9 @@ $(document).ready(function () {
                         <h1 class="pricing-card-title mb-5">2 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>2</strong> ETH each</p>
                         <p class="mb-5">No Referral necessary</p>
+                        <p class="mb-5 pool5sequencue" style="display: none;">Your position number : <strong id="pool5sequencue"></strong> </p>
+                        <p class="mb-5 pool5paying" style="display: none;">Current Paying Sequence number: <strong id="pool5paying"></strong></p>
+              
                         <button type="button" class="btn btn-success pool5pay">Enter</button>
                         <p class="pool5transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1586,6 +1649,8 @@ $(document).ready(function () {
                         <h1 class="pricing-card-title mb-5">5 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>5</strong> ETH each</p>
                         <p class="mb-5">No Referral necessary</p>
+                        <p class="mb-5 pool6sequencue" style="display: none;">Your position number : <strong id="pool6sequencue"></strong> </p>
+                        <p class="mb-5 pool6paying" style="display: none;">Current Paying Sequence number: <strong id="pool6paying"></strong></p>
                         <button type="button" class="btn btn-success pool6pay">Enter</button>
                         <p class="pool6transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1605,6 +1670,8 @@ $(document).ready(function () {
                         <h1 class="pricing-card-title mb-5">10 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>10</strong> ETH each</p>
                         <p class="mb-5">No Referral necessary</p>
+                        <p class="mb-5 pool7sequencue" style="display: none;">Your position number : <strong id="pool7sequencue"></strong> </p>
+                        <p class="mb-5 pool7paying" style="display: none;">Current Paying Sequence number: <strong id="pool7paying"></strong></p>
                         <button type="button" class="btn btn-success pool7pay">Enter</button>
                         <p class="pool7transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1624,6 +1691,8 @@ $(document).ready(function () {
                         <h1 class="pricing-card-title mb-5">20 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>20</strong> ETH each</p>
                         <p class="mb-5">No Referral necessary</p>
+                        <p class="mb-5 pool8sequencue" style="display: none;">Your position number : <strong id="pool8sequencue"></strong> </p>
+                        <p class="mb-5 pool8paying" style="display: none;">Current Paying Sequence number: <strong id="pool8paying"></strong></p>
                         <button type="button" class="btn btn-success pool8pay">Enter</button>
                         <p class="pool8transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1643,6 +1712,8 @@ $(document).ready(function () {
                         <h1 class="pricing-card-title mb-5">50 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>50</strong> ETH each</p>
                         <p class="mb-5">No Referral necessary</p>
+                        <p class="mb-5 pool9sequencue" style="display: none;">Your position number : <strong id="pool9sequencue"></strong> </p>
+                        <p class="mb-5 pool9paying" style="display: none;">Current Paying Sequence number: <strong id="pool9paying"></strong></p>
                         <button type="button" class="btn btn-success pool9pay">Enter</button>
                         <p class="pool9transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1662,6 +1733,8 @@ $(document).ready(function () {
                         <h1 class="pricing-card-title mb-5">100 ETH</h1>
                         <p class="mb-5">Globally <strong>3</strong> people pays  <br /><strong>100</strong> ETH each</p>
                         <p class="mb-5">No Referral necessary</p>
+                        <p class="mb-5 pool10sequencue" style="display: none;">Your position number : <strong id="pool10sequencue"></strong> </p>
+                        <p class="mb-5 pool10paying" style="display: none;">Current Paying Sequence number: <strong id="pool10paying"></strong></p>
                         <button type="button" class="btn btn-success pool10pay">Enter</button>
                         <p class="pool10transaction btn btn-primary disabled">Not Eligible</p>
                     </div>
@@ -1708,69 +1781,70 @@ $(document).ready(function () {
     <!-- Back-to-top -->
     <a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-    <!-- Jquery-scripts -->
-    <script src="https://bullrun.live/Content/assets/js/vendors/jquery-3.2.1.min.js"></script>
+   <!-- Jquery-scripts -->
+   <script src="https://bullrun.live/Content/assets/js/vendors/jquery-3.2.1.min.js"></script>
 
-    <!-- Moment js-->
-    <script src="https://bullrun.live/Content/assets/plugins/moment/moment.min.js"></script>
+   <!-- Moment js-->
+   <script src="https://bullrun.live/Content/assets/plugins/moment/moment.min.js"></script>
 
-    <!-- Bootstrap-scripts js -->
-    <script src="https://bullrun.live/Content/assets/js/vendors/bootstrap.bundle.min.js"></script>
+   <!-- Bootstrap-scripts js -->
+   <script src="https://bullrun.live/Content/assets/js/vendors/bootstrap.bundle.min.js"></script>
 
-    <!-- Sparkline JS-->
-    <script src="https://bullrun.live/Content/assets/js/vendors/jquery.sparkline.min.js"></script>
+   <!-- Sparkline JS-->
+   <script src="https://bullrun.live/Content/assets/js/vendors/jquery.sparkline.min.js"></script>
 
-    <!-- Bootstrap-daterangepicker js -->
-    <script src="https://bullrun.live/Content/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+   <!-- Bootstrap-daterangepicker js -->
+   <script src="https://bullrun.live/Content/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-    <!-- Bootstrap-datepicker js -->
-    <script src="https://bullrun.live/Content/assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+   <!-- Bootstrap-datepicker js -->
+   <script src="https://bullrun.live/Content/assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
 
-    <!-- Chart-circle js -->
-    <script src="https://bullrun.live/Content/assets/js/vendors/circle-progress.min.js"></script>
+   <!-- Chart-circle js -->
+   <script src="https://bullrun.live/Content/assets/js/vendors/circle-progress.min.js"></script>
 
-    <!-- Rating-star js -->
-    <script src="https://bullrun.live/Content/assets/plugins/rating/jquery.rating-stars.js"></script>
+   <!-- Rating-star js -->
+   <script src="https://bullrun.live/Content/assets/plugins/rating/jquery.rating-stars.js"></script>
 
-    <!-- Custom scroll bar js-->
-    <script src="https://bullrun.live/Content/assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+   <!-- Custom scroll bar js-->
+   <script src="https://bullrun.live/Content/assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <!-- P-scroll js -->
-    <script src="https://bullrun.live/Content/assets/plugins/p-scroll/p-scroll.js"></script>
-    <script src="https://bullrun.live/Content/assets/plugins/p-scroll/p-scroll-leftmenu.js"></script>
+   <!-- P-scroll js -->
+   <script src="https://bullrun.live/Content/assets/plugins/p-scroll/p-scroll.js"></script>
+   <script src="https://bullrun.live/Content/assets/plugins/p-scroll/p-scroll-leftmenu.js"></script>
 
-    <!-- Sidemenu js-->
-    <script src="https://bullrun.live/Content/assets/plugins/sidemenu/sidemenu.js"></script>
+   <!-- Sidemenu js-->
+   <script src="https://bullrun.live/Content/assets/plugins/sidemenu/sidemenu.js"></script>
 
-    <!-- Sidemenu-respoansive-tabs js -->
-    <script src="https://bullrun.live/Content/assets/plugins/sidemenu-responsive-tabs/js/sidemenu-responsive-tabs.js"></script>
+   <!-- Sidemenu-respoansive-tabs js -->
+   <script src="https://bullrun.live/Content/assets/plugins/sidemenu-responsive-tabs/js/sidemenu-responsive-tabs.js"></script>
 
-    <!-- Leftmenu js -->
-    <script src="https://bullrun.live/Content/assets/js/left-menu.js"></script>
+   <!-- Leftmenu js -->
+   <script src="https://bullrun.live/Content/assets/js/left-menu.js"></script>
 
-    <!--Newsticker js-->
-    <script src="https://bullrun.live/Content/assets/plugins/newsticker/jquery.jConveyorTicker.js"></script>
-    <script src="https://bullrun.live/Content/assets/js/newsticker.js"></script>
+   <!--Newsticker js-->
+   <script src="https://bullrun.live/Content/assets/plugins/newsticker/jquery.jConveyorTicker.js"></script>
+   <script src="https://bullrun.live/Content/assets/js/newsticker.js"></script>
 
-    <!-- Chart js-->
-    <script src="https://bullrun.live/Content/assets/plugins/chart/chart.min.js"></script>
+   <!-- Chart js-->
+   <script src="https://bullrun.live/Content/assets/plugins/chart/chart.min.js"></script>
 
-    <!-- Nice-select js-->
-    <script src="https://bullrun.live/Content/assets/plugins/jquery-nice-select/js/jquery.nice-select.js"></script>
-    <script src="https://bullrun.live/Content/assets/plugins/jquery-nice-select/js/nice-select.js"></script>
+   <!-- Nice-select js-->
+   <script src="https://bullrun.live/Content/assets/plugins/jquery-nice-select/js/jquery.nice-select.js"></script>
+   <script src="https://bullrun.live/Content/assets/plugins/jquery-nice-select/js/nice-select.js"></script>
 
-    <!-- Apexchart js-->
-    <script src="https://bullrun.live/Content/assets/js/apexcharts.js"></script>
+   <!-- Apexchart js-->
+   <script src="https://bullrun.live/Content/assets/js/apexcharts.js"></script>
 
-    <!-- Rightsidebar js -->
-    <script src="https://bullrun.live/Content/assets/plugins/sidebar/sidebar.js"></script>
+   <!-- Rightsidebar js -->
+   <script src="https://bullrun.live/Content/assets/plugins/sidebar/sidebar.js"></script>
 
-    <!-- Index js-->
-    <script src="https://bullrun.live/Content/assets/js/index2.js"></script>
+   <!-- Index js-->
+   <script src="https://bullrun.live/Content/assets/js/index2.js"></script>
 
-    <!-- Custom js-->
-    <script src="https://bullrun.live/Content/assets/js/custom.js"></script>
-    <!--LOgout Js-->
+   <!-- Custom js-->
+   <script src="https://bullrun.live/Content/assets/js/custom.js"></script>
+   <!--LOgout Js-->
+   
     
     <script> 
      $(document).ready(function() {
@@ -1784,16 +1858,7 @@ $(document).ready(function () {
   
   
    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-    <script src="https://bullrun.live/socialjs.js/"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function (event) {
-            socialjs.init({
-                container: '.socialjs',
-                https: true
-            });
-        });
-        
-      </script>
+ 
   
 </body>
 </html>

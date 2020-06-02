@@ -593,7 +593,12 @@ function checkPool1() {
         if(result[1] > 0){
         $('#pool1sequencue').text(result[1])
         $('#pool1sequencue').show();
-        $('.pool1sequencue').show();}
+        $('.pool1sequencue').show();
+        myContractInstance.methods.pool1activeUserID().call().then(function (result3) {
+            $('.pool1paying').show();
+            $('#pool1paying').html(result3);
+        })
+        }
        
             if (!result[0]) {
                 $('.pool1pay').show();
@@ -630,6 +635,10 @@ function checkPool2() {
             $('#pool2sequencue').text(result[1])
             $('#pool2sequencue').show();
             $('.pool2sequencue').show();
+            myContractInstance.methods.pool2activeUserID().call().then(function (result3) {
+            $('.pool2paying').show();
+            $('#pool2paying').html(result3);
+        })
         }
        
             if (!result[0]) {
@@ -669,7 +678,12 @@ function checkPool3() {
         if(result[1] > 0){
         $('#pool3sequencue').text(result[1])
         $('#pool3sequencue').show();
-        $('.pool3sequencue').show();}
+        $('.pool3sequencue').show();
+        myContractInstance.methods.pool3activeUserID().call().then(function (result3) {
+            $('.pool3paying').show();
+            $('#pool3paying').html(result3);
+        })
+        }
             if (!result[0]) {
                 $('.pool3pay').show();
                 $('.pool3transaction').hide();
@@ -702,7 +716,14 @@ function checkPool4() {
         if(result[1] > 0){
         $('#pool4sequencue').text(result[1])
         $('#pool4sequencue').show();
-        $('.pool4sequencue').show();}
+        $('.pool4sequencue').show();
+        
+        
+        myContractInstance.methods.pool4activeUserID().call().then(function (result3) {
+            $('.pool4paying').show();
+            $('#pool4paying').html(result3);
+        })
+        }
        
             if (!result[0]) {
                 $('.pool4pay').show();
@@ -734,7 +755,13 @@ function checkPool5() {
         if(result[1] > 0){
         $('#pool5sequencue').text(result[1])
         $('#pool5sequencue').show();
-        $('.pool5sequencue').show();}
+        $('.pool5sequencue').show();
+        
+        myContractInstance.methods.pool5activeUserID().call().then(function (result3) {
+            $('.pool5paying').show();
+            $('#pool5paying').html(result3);
+        })
+        }
        
             if (!result[0]) {
                 $('.pool5pay').show();
@@ -767,7 +794,13 @@ function checkPool6() {
         if(result[1] > 0){
         $('#pool6sequencue').text(result[1])
         $('#pool6sequencue').show();
-        $('.pool6sequencue').show();}
+        $('.pool6sequencue').show();
+        
+        myContractInstance.methods.pool6activeUserID().call().then(function (result3) {
+            $('.pool6paying').show();
+            $('#pool6paying').html(result3);
+        })
+        }
         
             if (!result[0]) {
                 $('.pool6pay').show();
@@ -798,7 +831,14 @@ function checkPool7() {
         if(result[1] > 0){
         $('#pool7sequencue').text(result[1])
         $('#pool7sequencue').show();
-        $('.pool7sequencue').show();}
+        $('.pool7sequencue').show();
+        
+        
+        myContractInstance.methods.pool7activeUserID().call().then(function (result3) {
+            $('.pool7paying').show();
+            $('#pool7paying').html(result3);
+        })
+        }
         
             if (!result[0]) {
                 $('.pool7pay').show();
@@ -832,7 +872,13 @@ function checkPool8() {
         if(result[1] > 0){
         $('#pool8sequencue').text(result[1])
         $('#pool8sequencue').show();
-        $('.pool8sequencue').show();}
+        $('.pool8sequencue').show();
+        
+        myContractInstance.methods.pool8activeUserID().call().then(function (result3) {
+            $('.pool8paying').show();
+            $('#pool8paying').html(result3);
+        })
+        }
        
             if (!result[0]) {
                 $('.pool8pay').show();
@@ -864,6 +910,14 @@ function checkPool9() {
     myContractInstance.methods.pool9users(account).call().then(function ( result) {
         if(result[1] > 0){
         $('#pool9sequencue').text(result[1])
+        myContractInstance.methods.pool8activeUserID().call().then(function (result3) {
+            $('.pool9paying').show();
+                                $('#pool9paying').html(result3);
+                                })
+
+
+
+
         $('#pool9sequencue').show();
         $('.pool9sequencue').show();}
        
@@ -898,7 +952,12 @@ function checkPool10() {
         if(result[1] > 0){
         $('#pool10sequencue').text(result[1])
         $('#pool10sequencue').show();
-        $('.pool10sequencue').show();}
+        $('.pool10sequencue').show();
+        myContractInstance.methods.pool10activeUserID().call().then(function (result3) {
+            $('.pool10paying').show();
+            $('#pool10paying').html(result3);
+        })
+        }
        
             if (!result[0]) {
                 $('.pool10pay').show();

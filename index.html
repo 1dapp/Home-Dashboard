@@ -1826,11 +1826,16 @@ $(document).ready(function () {
    <script src="https://1dapp.github.io/Home-Dashboard/Content/assets/js/newsticker.js"></script>
 
    <!-- Chart js-->
-   <script src="https://1dapp.github.io/Home-Dashboard/Content/assets/plugins/chart/chart.min.js"></script>
-
+   <script src="https://1dapp.github.io/Home-Dashboard/assets/plugins/chart/chart.min.js"></script>
+                
    <!-- Nice-select js-->
    <script src="https://1dapp.github.io/signup/jquery.nice-select.js"></script>
-   <script src="https://1dapp.github.io/Home-Dashboard/Content/assets/plugins/jquery-nice-select/js/nice-select.js"></script>
+   <script (function($) {
+    "use strict";	
+	
+		// ______________Nice Select	
+	$('select.nice-select').niceSelect();
+})(jQuery); </script>
 
    <!-- Apexchart js-->
    <script src="https://1dapp.github.io/Home-Dashboard/Content/assets/js/apexcharts.js"></script>
